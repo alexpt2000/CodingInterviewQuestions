@@ -30,7 +30,7 @@ public class arrays {
 		int[] list2e = { 4, 5, 6, 7, 0, 2, 3 };
 		int[] list2f = { 1, 2, 3, 4, 5, 6, 7 };
 		
-		System.out.println(isRotation(list1, list2d));
+		System.out.println(isRotation(list1, list2f));
 
 		// **********************************************************
 	}
@@ -82,7 +82,7 @@ public class arrays {
 		int key = list1[0];
 		int key_loc = -1;
 
-		for (int i = 0; i < list2.length-1; i++) {
+		for (int i = 0; i < list2.length; i++) {
 			if (list2[i] == key) {
 				key_loc = i;
 				break;
@@ -92,7 +92,7 @@ public class arrays {
 			return false;
 		}
 
-		for (int i = 0; i < list1.length-1; i++) {
+		for (int i = 0; i < list1.length; i++) {
 			int j = (key_loc + i) % list1.length;
 			if (list1[i] != list2[j]) {
 				return false;
