@@ -15,17 +15,9 @@ public class missingNumber {
 	}
 
 	public static Integer missingList(int[] listMissing) {
-		int count = 0;
-		int key = 0;
-
 		for (int i = 0; i < listMissing.length; i++) {
-			if (count != listMissing[i])
-				return listMissing[i] - 1;
-
-			if (key != listMissing[0])
-				return key;
-
-			count += 1;
+			if (listMissing[i] != i) return listMissing[i] - 1;
+			if (listMissing[0] != 0) return 0;
 		}
 		return null;
 	}
