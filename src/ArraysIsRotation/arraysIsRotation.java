@@ -11,6 +11,11 @@ public class arraysIsRotation {
 		int[] list2e = { 4, 5, 6, 7, 0, 2, 3 };
 		int[] list2f = { 1, 2, 3, 4, 5, 6, 7 };
 
+		System.out.println(isRotation(list1, list2a));
+		System.out.println(isRotation(list1, list2b));
+		System.out.println(isRotation(list1, list2c));
+		System.out.println(isRotation(list1, list2d));
+		System.out.println(isRotation(list1, list2e));
 		System.out.println(isRotation(list1, list2f));
 	}
 

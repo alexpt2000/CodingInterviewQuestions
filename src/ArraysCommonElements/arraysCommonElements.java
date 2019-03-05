@@ -17,6 +17,8 @@ public class arraysCommonElements {
 		int[] array2C = { 6, 7, 8, 9, 10, 11 };
 
 		System.out.println(Arrays.toString(commonElements(array1A, array2A)));
+		System.out.println(Arrays.toString(commonElements(array1B, array2B)));
+		System.out.println(Arrays.toString(commonElements(array1C, array2C)));
 
 	}
 

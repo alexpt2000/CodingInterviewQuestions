@@ -8,23 +8,26 @@ public class stringsNonRepeating {
 		String test1 = "abcab"; // should return 'c'
 		String test2 = "abab"; // should return null
 		String test3 = "aabbbc"; // should return 'c'
-		String test = "aabbdbc"; // should return 'd'
+		String test4 = "aabbdbc"; // should return 'd'
 		     
-        System.out.println(nonRepeating(test));
+        System.out.println(nonRepeating(test1));
+        System.out.println(nonRepeating(test2));
+        System.out.println(nonRepeating(test3));
+        System.out.println(nonRepeating(test4));
 	}
 	
     public static Character nonRepeating(String s) {
         HashMap<Character, Integer> charCount = new HashMap<Character, Integer>();
-        for (char c : s.toCharArray()) {
-            if (charCount.containsKey(c)) {
-                Integer newVal = charCount.get(c) + 1;
-                charCount.put(c, newVal);
+        for (char i : s.toCharArray()) {
+            if (charCount.containsKey(i)) {
+                Integer newVal = charCount.get(i) + 1;
+                charCount.put(i, newVal);
             } else {
-                charCount.put(c, 1);
+                charCount.put(i, 1);
             }
         }
-        for (char c : s.toCharArray()) {
-            if (charCount.get(c) == 1) return c;
+        for (char i : s.toCharArray()) {
+            if (charCount.get(i) == 1) return i;
         }
         return null;
     }
